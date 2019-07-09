@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3DBFD48-BCBC-4121-83B6-61F97CF429A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeiDaJinorderproject2</RootNamespace>
+    <AssemblyName>LeiDaJinorderproject2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\谷歌\下载文件\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calibration.Designer.cs">
+      <DependentUpon>calibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="initial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="initial.Designer.cs">
+      <DependentUpon>initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newpassword.Designer.cs">
+      <DependentUpon>Newpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSI.Designer.cs">
+      <DependentUpon>RSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VRD.Designer.cs">
+      <DependentUpon>VRD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VPL.Designer.cs">
+      <DependentUpon>VPL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ohm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ohm.Designer.cs">
+      <DependentUpon>Ohm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Starting.Designer.cs">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="calibration.resx">
+      <DependentUpon>calibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="initial.resx">
+      <DependentUpon>initial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newpassword.resx">
+      <DependentUpon>Newpassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSI.resx">
+      <DependentUpon>RSI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VRD.resx">
+      <DependentUpon>VRD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VPL.resx">
+      <DependentUpon>VPL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ohm.resx">
+      <DependentUpon>Ohm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Starting.resx">
+      <DependentUpon>Starting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\图片10.png" />
+    <Content Include="Resources\图片11.png" />
+    <Content Include="Resources\图片12.png" />
+    <Content Include="Resources\图片2.png" />
+    <Content Include="Resources\图片26.png" />
+    <Content Include="Resources\图片27.png" />
+    <Content Include="Resources\图片28.png" />
+    <Content Include="Resources\图片29.png" />
+    <Content Include="Resources\图片3.png" />
+    <Content Include="Resources\图片6.png" />
+    <Content Include="Resources\图片7.png" />
+    <Content Include="Resources\图片8.png" />
+    <Content Include="Resources\图片9.png" />
+    <Content Include="Resources\点击前Help.png" />
+    <Content Include="Resources\点击前ohm.png" />
+    <Content Include="Resources\点击前RSI.png" />
+    <Content Include="Resources\点击前Setting.png" />
+    <Content Include="Resources\点击前VRD.png" />
+    <Content Include="Resources\点击前VRL.png" />
+    <Content Include="Resources\点击后Help.png" />
+    <Content Include="Resources\点击后ohm.png" />
+    <Content Include="Resources\点击后RSI.png" />
+    <Content Include="Resources\点击后Setting.png" />
+    <Content Include="Resources\点击后VRD.png" />
+    <Content Include="Resources\点击后VRL.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
